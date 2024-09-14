@@ -1,0 +1,257 @@
+HTML code
+//Code For Registration
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container registration-container">
+        <h2>Registration</h2>
+        <form id="registrationForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <button type="submit">Register</button>
+        </form
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+</body>
+</html>
+
+//Code For Login Page
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Simulate a successful login
+            window.location.href = 'health-monitoring.html';
+        });
+    </script>
+</body>
+</html>
+
+
+// Code For Health Monitoring System
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Monitoring</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container monitoring-container">
+        <h2>Health Monitoring</h2>
+        <div class="metrics">
+            <div class="metric">
+                <h3>Oxygen Level</h3>
+                <p id="oxygenLevel">95%</p>
+            </div>
+            <div class="metric">
+                <h3>Sugar Level</h3>
+                <p id="sugarLevel">90 mg/dL</p>
+            </div>
+            <div class="metric">
+                <h3>Temperature</h3>
+                <p id="temperature">98.6°F</p>
+            </div>
+            <div class="metric">
+                <h3>Blood Pressure</h3>
+                <p id="bloodPressure">120/80 mmHg</p>
+            </div>
+        </div>
+        <button onclick="window.location.href='hospital-info.html'">Hospital Info</button>
+    </div>
+</body>
+</html>
+
+
+//Code For Hosptial_info
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Information</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container info-container">
+        <h2>Hospital Information</h2>
+        <section class="hospital">
+            <h3>About the Hospital</h3>
+            <p>Our hospital provides excellent care with state-of-the-art facilities and experienced medical staff.</p>
+        </section>
+        <section class="doctor">
+            <h3>Our Doctors</h3>
+            <p>Dr. John Doe - Cardiologist</p>
+            <p>Dr. Jane Smith - Endocrinologist</p>
+        </section>
+        <section class="departments">
+            <h3>Departments</h3>
+            <p>Cardiology</p>
+            <p>Endocrinology</p>
+            <p>Orthopedics</p>
+        </section>
+        <section class="facilities">
+            <h3>Medical Facilities</h3>
+            <p>24/7 Emergency</p>
+            <p>Diagnostic Labs</p>
+            <p>Pharmacy</p>
+        </section>
+        <button onclick="window.location.href='doctor-info.html'">Doctor Info</button>
+    </div>
+</body>
+</html>
+
+
+//Code forDoctor Information
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Information</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container doctor-info-container">
+        <h2>Doctor Information</h2>
+        <section class="timings">
+            <h3>Doctor Timings</h3>
+            <p>Dr. John Doe - 9:00 AM to 5:00 PM</p>
+            <p>Dr. Jane Smith - 10:00 AM to 6:00 PM</p>
+        </section>
+        <button onclick="window.location.href='ambulance-info.html'">Ambulance Info</button>
+    </div>
+</body>
+</html>
+
+
+//Code for ambulance info and monitoring 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambulance Information</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container ambulance-info-container">
+        <h2>Ambulance Information</h2>
+        <section class="ambulance">
+            <h3>Ambulance Facility</h3>
+            <p>Driver:Piyush</p>
+            <p>Contact: +1234567890</p>
+        </section>
+        <button onclick="window.location.href='wards-info.html'">Wards Info</button>
+    </div>
+</body>
+</html>
+
+//Code for Wards_info
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wards Information</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container wards-info-container">
+        <h2>Wards Information</h2>
+        <section class="wards">
+            <h3>Emergency Wards</h3>
+            <p>Available: 5</p>
+            <h3>OPD Wards</h3>
+            <p>Available: 10</p>
+        </section>
+    </div>
+</body>
+</html>
+
+
+CSS code for all
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.metrics, .sections {
+    display: flex;
+    flex-wrap: wrap;
+
